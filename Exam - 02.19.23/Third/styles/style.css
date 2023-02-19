@@ -1,0 +1,186 @@
+:root {
+    --clr-place-button: #370511;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.explore-btn {
+    padding: 3px 40px;
+    background-color: var(--clr-place-button);
+    color: white;
+}
+
+/*Header*/
+header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+/*Navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-links .nav-link-item a {
+    color: black;
+}
+.nav-title {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+/*Hero*/
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -1;
+}
+.hero .wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    left: -200px;
+}
+.wrapper h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.wrapper h4 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.wrapper p {
+    max-width: 70%;
+    margin-bottom: 25px;
+}
+.wrapper .btn {
+    max-width: 200px;
+    padding: 5px;
+}
+/*Places*/
+.places {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px;
+}
+.places h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.places .subtitle {
+    text-align: center;
+}
+.places-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    row-gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+/*Individual place*/
+.place {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 25%;
+}
+.place .image {
+    height: 80%;
+    overflow: hidden;
+}
+.place .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.place h2 {
+    margin-top: 15px;
+}
+.place p {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+}
+.place .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.place .text .btn {
+    max-width: 70%;
+}
+
+/*Footer*/
+footer {
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 80px;
+}
+.footer-title {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.footer-links .footer-link{
+    margin: 20px 0px;
+}
+.footer-links .footer-link:first-child {
+    margin-top: 0;
+}
+.footer-links .footer-link a {
+    color: white;
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.social i {
+    font-size: 1.2rem;
+}
